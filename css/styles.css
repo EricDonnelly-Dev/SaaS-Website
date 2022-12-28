@@ -1,0 +1,115 @@
+/* Nav Styles */
+
+.nav-bar{
+    position: fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    z-index: 500;
+    padding:1rem;
+    transition: ease-in-out 0.3s;
+}
+.nav-bar.sticky{
+    background: var(--clr-white);
+    box-shadow: 0 0 20px rgba(48,63,100,0.2);
+}
+.nav-bar.sticky .navbar-toggler span ,
+.nav-bar.sticky .nav-logo{
+    color: var(--font-colour-primary);
+}
+.navbar-toggler span{
+    font-size: var(--size-20);
+    cursor: pointer;
+    pointer-events: none;
+}
+[aria-controls="navbarDropdown"]{
+    display: none;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-logo{
+    display: flex;
+    color: var(--clr-white);
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 700;
+    transition: ease-in-out 0.3s;
+    height: var(--size-26);
+    align-items: flex-start;
+}
+.nav-logo img{
+    width: var(--size-150);
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-links > a{
+    margin: 0 var(--size-30);
+    flex-shrink: 0;
+}
+.nav-link a{
+    color: var(--font-colour-primary);
+    font-size: 0.8125rem;
+    font-family: "Hind",sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 2.5rem;
+    line-height: 1.25rem;
+}
+
+
+/* Hero Section*/
+.bg-header{
+    background-color:#d9d9d9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    background-image: url("../saas-project-assets/banners/bg-hero.svg");
+    padding: var(--size-150) 0;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 37.5rem;
+}
+.hero-text{
+    max-width: 350px;
+    margin: 2rem auto;
+    text-align: left;
+}
+.hero-text h1{
+    font-size: var(--size-40);
+}
+.hero-text > .btn{
+    margin-top:2rem;
+}
+.hero-icon-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(var(--size-80));
+}
+.icon-circles{
+    position: relative;
+}
+.ic-1{
+    left:var(--size-50);
+    bottom: var(--size-30)
+}
+.ic-2{
+    bottom: var(--size-30);
+}
+.ic-3{
+    bottom: var(--size-30);
+
+}
+.ic-4{
+    left:var(--size-30);
+
+}
