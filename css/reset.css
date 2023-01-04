@@ -132,11 +132,13 @@ img{
     text-align: center;
     margin: 0 auto;
 }
+.text-contain h1,
 .text-contain h2{
     color: black;
     font-size: 2.5rem;
     font-weight: 600;
 }
+.text-contain p,
 .text-contain h5{
     font-size: 1.4rem;
     font-weight: 500;
@@ -158,7 +160,8 @@ img{
 /*    footer .container{max-width: 992px;}*/
 /*}*/
 @media (min-width: 1200px) {
-    .container{max-width: 1140px}
+    .container{max-width: 1120px}
+    .banner-wrapper{max-width: 1240px}
 }
 
 
