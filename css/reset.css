@@ -143,12 +143,31 @@ img{
     font-size: 1.4rem;
     font-weight: 500;
 }
-
 .bg-contrast{
-    background-color: var(--clr-contrast);
+    background-color: var(--contact-bg);
     padding: var(--size-150) 0;
     margin: 0 auto;
 }
+
+.card{
+    padding: var(--size-40) var(--size-30) 10rem;
+    box-shadow: 0 0 10px rgba(48,63,100,0.15);
+    background-color: white;
+    border-radius: .5rem;
+}
+.circle{
+    border-radius: 50%;
+    margin: var(--size-18);
+}
+.sm-c{
+    height: var(--size-40);
+    width: var(--size-40);
+}
+.med-c{
+    height: var(--size-60);
+    width: var(--size-60);
+}
+
 
 
 
@@ -161,7 +180,9 @@ img{
 /*}*/
 @media (min-width: 1200px) {
     .container{max-width: 1120px}
-    .banner-wrapper{max-width: 1240px}
+    .banner-wrapper,.pricing-wrapper{max-width: 1240px}
+    .testimonial-text{max-width: 600px}
+    .trusted-by-wrapper{max-width: 1800px}
 }
 
 

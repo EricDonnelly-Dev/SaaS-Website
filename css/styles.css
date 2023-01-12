@@ -66,6 +66,7 @@
 
 /* Hero Section*/
 .bg-header{
+    position: relative;
     background-color:#d9d9d9;
     background-repeat: no-repeat;
     background-size: cover;
@@ -75,7 +76,7 @@
 .bg-header::after{
     position: absolute;
     content: "";
-    bottom: var(--size-50);
+    bottom: 0;
     width: 100%;
     height: 71%;
     background: linear-gradient(-185deg, rgba(0,50,0,0.0) 20%,rgba(0,0,10,0.0) 70%, white 70%);
@@ -226,7 +227,6 @@
 .dot:last-of-type::after{
    left:-12.5rem;
 }
-
 .banner-wrapper{
     position: relative;
     margin: var(--size-100) auto;
@@ -240,5 +240,126 @@
     transform: translate(-50%,-50%);
     box-shadow: 0 var(--size-10) var(--size-20) rgba(24, 24, 24, 0.2);
     border-radius: 70%;
+}
+
+.testimonial-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 90px;
+}
+.testimonial-img{
+    margin: 20px auto;
+    width: 50%;
+}
+.background-image{
+    position: relative;
+    background-image: url("/saas-project-assets/abstract/dots.svg");
+    background-repeat: no-repeat;
+    bottom: 27.5rem;
+    right: 4rem;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+}
+.testimonial-text{
+    font-family: "Inter",sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-30);
+    text-align: left;
+    align-content: start;
+    justify-content: start;
+    padding-top: var(--size-40);
+    padding-left: var(--size-20);
+}
+.testimonial-text img{
+    margin-top: var(--size-100);
+    height: var(--size-50);
+    width: var(--size-100);
+}
+.testimonial-copy {
+    margin-bottom: var(--size-30);
+    line-height: var(--size-40);
+    font-size: var(--size-26);
+    color: black;
+}
+.testimonial-text h5{
+    font-weight: 700;
+    font-size: var(--size-20);
+    color: black;
+}
+.testimonial-text h6 {
+    font-weight: 700;
+    font-size: var(--size-14) ;
+    margin-top:-1.75rem;
+    margin-left: 0.125rem;
+}
+.trusted-by-wrapper{
+    margin-top: var(--size-150);
+    justify-self: center;
+    width: 100%;
+    grid-column: 1 /3;
+    grid-row: 2/2;
+}
+.trusted-by-wrapper h3{
+    font-size: var(--size-26);
+    text-transform: uppercase;
+    text-align: center;
+}
+.logo-wrapper{
+    margin-top: var(--size-80);
+    height: 30%;
+    display: flex;
+}
+.pricing-section{
+    padding: var(--size-150);
+}
+
+.pricing-wrapper{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-gap: var(--size-20);
+}
+.pricing-header{
+    text-align: center;
+    margin: var(--size-20) auto;
+}
+.pricing-card{
+    display: grid;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1/3;
+    grid-gap: var(--size-80);
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap:var(--size-26)
+}
+.card-text h1{
+    font-size: var(--size-60);
+    color: black;
+}
+.card-text p{
+    font-size: var(--size-18);
+    text-align: center;
+}
+.card-text small{
+    font-size: var(--size-20);
+    color: gray;
+}
+.pricing-card .btn{width: 45%;}
+.pricing-feature{
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-20);
+}
+.pricing-feature img{
+    width: 20%;
+}
+
+.people-wrapper {
+
 }
 
