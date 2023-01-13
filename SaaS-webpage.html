@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="./css/responsive.css">
     <script src="https://kit.fontawesome.com/e3c1836ba6.js" crossorigin="anonymous"></script>
 </head>
-<body >
+<body id="appBody">
     <div id="pageTop"></div>
     <nav class="nav-bar nav" id="topNav">
             <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
@@ -23,14 +24,17 @@
             </button>
             <div class="nav-logo"> <img src="saas-project-assets/project_logo/logo.svg" alt="Front Logo">
             </div>
-            <ul class="nav-links" >
-                <li class="nav-link"><a href="#">Home</a></li>
-                <li class="nav-link featured"><a href="#">Features</a></li>
-                <li class="nav-link"><a href="#">Learn</a></li>
-                <li class="nav-link"><a href="#">Pricing</a></li>
-                <li class="nav-link"><a href="#">Hire Us</a> </li>
+            <ul>
+                <div class="nav-links">
+                    <li class="nav-link"><a href="#">Home</a></li>
+                    <li class="nav-link featured"><a href="#">Features</a></li>
+                    <li class="nav-link"><a href="#">Learn</a></li>
+                    <li class="nav-link"><a href="#">Pricing</a></li>
+                    <li class="nav-link"><a href="#">Hire Us</a> </li>
+                </div>
                 <a class="btn btn-blue" href="#">Buy Now</a>
             </ul>
+
     </nav>
     <div class="bg-header ">
         <section class="hero container">
@@ -105,7 +109,7 @@
         </div>
     </section>
 <!--    Banner 1 Section-->
-    <section class="diff-perspective bg-contrast">
+    <section class="diff-perspective ">
         <div class="diff-perspective-text">
             <h1>Front makes you look at things  <br/> with a new perspective</h1>
             <a href="#" class="btn btn-blue"> <i class="fa-regular fa-circle-play"> </i> Play Video</a>
@@ -125,11 +129,30 @@
             </p>
         </div>
         <div class="dots-wrapper">
-            <div class="dot"><i class="fa-solid fa-circle fa-2xs"></i></div>
-            <div class="dot"><i class="fa-solid fa-circle fa-2xs"></i></div>
-            <div class="dot"><i class="fa-solid fa-circle fa-2xs"></i></div>
-            <div class="dot"><i class="fa-solid fa-circle fa-2xs"></i></div>
+            <div class="dot-wrapper">
+                <div class="dot first-dot"><i class="fa-solid fa-circle fa-2xs"></i></div>
+                <h1>Basic elements</h1>
+            </div>
+            <div class="dot-wrapper">
+                <div class="dot"><i class="fa-solid fa-circle fa-2xs"></i></div>
+                <h1>Components</h1>
+            </div>
+            <div class="dot-wrapper">
+                <div class="dot"><i class="fa-solid fa-circle fa-2xs"></i></div>
+                <h1>Combined Components</h1>
+            </div>
+            <div class="dot-wrapper">
+                <div class="dot last-dot"><i class="fa-solid fa-circle fa-2xs"></i></div>
+                <h1>Page Layouts</h1>
+            </div>
+
         </div>
+
+
+
+
+
+
     </section>
         <div class="banner-wrapper">
             <a href="" class="video-btn" >
@@ -156,8 +179,8 @@
                 <img src="saas-project-assets/company_logos/weebly.svg" alt="Weebly logo" class="trusted-by-logo">
                 <img src="saas-project-assets/company_logos/uber.svg" alt="Uber Logo" class="trusted-by-logo">
                 <img src="saas-project-assets/company_logos/slack.svg" alt="Slack Logo" class="trusted-by-logo">
-                <img src="saas-project-assets/company_logos/spotify.svg" alt="Spotify Logo" class="trusted-by-logo">
                 <img src="saas-project-assets/company_logos/airbnb.svg" alt="AirBnb Logo" class="trusted-by-logo">
+                <img src="saas-project-assets/company_logos/spotify.svg" alt="Spotify Logo" class="trusted-by-logo">
             </div>
         </div>
     </section>
@@ -202,16 +225,20 @@
         </div>
     </section>
 
-    <section class="bg-contrast">
-
+    <section class="bg-contrast ">
+    <div class="container contact-area ">
         <div class="contact-area-text">
-            <h1>Hire Us</h1>
-            <p> Whatever your goal - <br> We will get you there</p>
-
+            <div class="text-header">
+                <h1>Hire Us</h1>
+                <h4> Whatever your goal - <br> We will get you there</h4>
+            </div>
             <hr>
-            <p> <em>" I love Front! I love the Ease of use, I love the fact that I have total freedom ... "</em></p>
-            <h5> Charlotte Moore</h5>
-            <h6> Head of Commercials, Slack</h6>
+            <p class="quote">" I love Front! I love the Ease of use, I love the fact that I have total freedom ... "</p>
+
+            <div class="author-info">
+                <h5> Charlotte Moore</h5>
+                <h6> Head of Commercials, Slack</h6>
+            </div>
 
             <div class="people-wrapper">
                 <img src="saas-project-assets/people/woman_two.jpg" alt="Person 1" class="circle sm-c">
@@ -219,43 +246,113 @@
                 <img src="saas-project-assets/people/man_one.jpg" alt="Person 3" class="circle med-c">
             </div>
         </div>
-<div class="contact-area-form">
-    <form action="" method="post">
-            <p>Fill out the form, and we'll be in touch as soon as possible</p>
-        <label for="fName" hidden="hidden">First Name</label><input type="text" name="fName" id="fName" placeholder="First Name">
-        <label for="lName" hidden="hidden">Last Name></label><input type="text" name="lName" id="lName" placeholder="Last Name">
-        <label for="cFName" hidden="hidden">Last Name></label><input type="text" name="cFName" id="cFName" placeholder="First Name">
-        <label for="cLName" hidden="hidden">Last Name></label><input type="text" name="cLName" id="cLName" placeholder="Last Name">
-        <select name="budget" id="budget">
-            <option value="budget" selected disabled> Budget</option>
-            <option value="sole-proprietor" > Sole Proprietor</option>
-            <option value="company" > Small to Medium Company</option>
-            <option value="corp"> Corporate Entity</option>
-            <option value="other">Other</option>
-        </select>
-        <select name="country" id="country">
-            <option value="country" selected disabled> Country</option>
-            <option value="can">Canada</option>
-            <option value="usa">USA</option>
-            <option value="mex">Mexico</option>
-        </select>
-        <textarea name="projectDetails" id="projectDetails" cols="30" rows="10" placeholder="Tell us more about your project,needs,and timeline"></textarea>
-        <input type="checkbox" name="promoAgree" id="promoAgree">
-        <label for="promoAgree"> Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</label>
-        <a href="#"> View Privacy Policy</a>
-        <a href="#"> View Privacy Policy</a>
-        <input type="submit" class="btn-blue btn" value="Get Started">
-    </form>
-</div>
+        <div class="contact-area-form">
+            <form action="" method="post">
+                    <p class="form-header">Fill out the form, and we'll be in touch as soon as possible</p>
+                <label for="fName" hidden="hidden">First Name</label><input type="text" name="fName" id="fName" placeholder="First Name">
+                <label for="lName" hidden="hidden">Last Name></label><input type="text" name="lName" id="lName" placeholder="Last Name">
+                <label for="cFName" hidden="hidden">Last Name></label><input type="text" name="cFName" id="cFName" placeholder="First Name">
+                <label for="cLName" hidden="hidden">Last Name></label><input type="text" name="cLName" id="cLName" placeholder="Last Name">
+                <select name="budget" id="budget">
+                    <option value="budget" selected disabled> Budget</option>
+                    <option value="sole-proprietor" > Sole Proprietor</option>
+                    <option value="company" > Small to Medium Company</option>
+                    <option value="corp"> Corporate Entity</option>
+                    <option value="other">Other</option>
+                </select>
+                <select name="country" id="country">
+                    <option value="country" selected disabled> Country</option>
+                    <option value="can">Canada</option>
+                    <option value="usa">USA</option>
+                    <option value="mex">Mexico</option>
+                </select>
+                <textarea name="projectDetails" id="projectDetails" cols="30" rows="10" placeholder="Tell us more about your project,needs,and timeline"></textarea>
+                <fieldset>
+                    <input class="checkbox-input" type="checkbox" name="promoAgree" id="promoAgree">
+                    <label for="promoAgree"> Yes, I'd like to receive occasional marketing emails from Front. I have the right to opt out at any time.</label>
+                </fieldset>
+                <a href="#"> View Privacy Policy</a>
+                <a href="#"> View Privacy Policy</a>
+                <input type="submit" class="btn-blue btn" value="Get Started">
+            </form>
+        </div>
+    </div>
     </section>
+    <footer>
+        <div class="footer-top">
+            <div class="col logo-col">
+                <img src="saas-project-assets/project_logo/logo.svg" alt="Front Company">
+                <p><i class="fa-solid fa-location-arrow"></i>  153 Williamson Plaza, Maggieberg </p>
+                <p><i class="fa-solid fa-phone"></i>+1 (062) 109-9222 </p>
+            </div>
+            <div class="col">
+                <h1>Company</h1>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Career</a> <span class="sticker">We're Hiring</span> </li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Customers</a></li>
+                    <li><a href="#">Hire Us</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Features</h1>
+                <ul>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Release Notes</a></li>
+                    <li><a href="#">Integrations</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Documentation</h1>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Status</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Tech Requirements</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h1>Resources</h1>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-circle-info"></i> Help</a></li>
+                    <li><a href="#"><i class="fa-solid fa-circle-user"></i> Your Account</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <hr>
+        <div class="footer-bot">
+            <div class="site-path">
+                 <a href="#">Privacy & Policy </a> &gt; <a href="#">Terms</a> &gt; <a href="">Site Map</a>
+            </div>
+            <div class="icon-boxes">
+                <a class="icon-box" href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                <a class="icon-box" href="#"><i class="fa-brands fa-google"></i></a>
+                <a class="icon-box" href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a class="icon-box" href="#"><i class="fa-brands fa-github"></i></a>
+                <select name="countrySelect" id="countryFooterSelect">
+                    <option value="can"> 🇨🇦 Canada</option>
+                    <option value="usa"> 🇺🇸 USA</option>
+                    <option value="mex"> 🇲🇽 Mexico</option>
+                </select>
+           </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© Front. 2022 Responsive designs. All rights reserved.</p>
+            <p>When you visit or interact with our sites, services or tools, we or our authorised service providers may use cookies for storing information to help provide you with a better, faster and safer experience and for marketing purposes.</p>
+        </div>
+    </footer>
 
 
     <script>
         const nav = document.getElementById("topNav");
         window.onscroll = function (){
-            if(window.pageYOffset >100){
+            if(window.scrollY >100){
                 nav.classList.add("sticky");
-            }else{
+            }else {
                 nav.classList.remove("sticky");
             }
         }
@@ -263,9 +360,30 @@
         function toggleNav({target}){
             const expanded = target.getAttribute('aria-expanded') === 'true' || false;
             navButton.setAttribute('aria-expanded',!expanded);
-
+            toggleScrollandSticky(expanded)
         }
         navButton.addEventListener('click',toggleNav);
+
+
+        function toggleScrollandSticky(expanded) {
+            if(!expanded){
+                nav.classList.add("sticky");
+                disableBodyScroll()
+            }
+            else {
+                nav.classList.remove("sticky");
+                enableBodyScroll()
+            }
+        }
+        function disableBodyScroll(){
+            const element = document.querySelector("#appBody");
+            element.classList.add("stop-scroll");
+        }
+
+        function enableBodyScroll(){
+            const element = document.querySelector("#appBody");
+            element.classList.remove("stop-scroll");
+        }
     </script>
 </body>
 </html>
