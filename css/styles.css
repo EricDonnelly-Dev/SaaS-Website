@@ -72,6 +72,8 @@
     background-size: cover;
     background-image: linear-gradient(100deg, rgba(217, 217, 217, 0.44) 17%, rgba(217, 217, 217, 0) 55% ,rgba(217, 217, 217, 0) 70%, rgba(225, 231, 239,0.8) 70%);
     padding: var(--size-100) 0;
+    left: 0;
+    right: 0;
 }
 .bg-header::after{
     position: absolute;
