@@ -45,12 +45,10 @@
 .nav-logo img{
     width: var(--size-150);
 }
-
 .nav-links{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
+
 .nav-links > a{
     margin: 0 var(--size-30);
     flex-shrink: 0;
@@ -67,11 +65,11 @@
 /* Hero Section*/
 .bg-header{
     position: relative;
-    background-color:#d9d9d9;
+    background-color:#ffffff;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(100deg, rgba(217, 217, 217, 0.44) 17%, rgba(217, 217, 217, 0) 55% ,rgba(217, 217, 217, 0) 70%, rgba(225, 231, 239,0.8) 70%);
-    padding: var(--size-100) 0;
+    background-image: linear-gradient(118deg, rgba(217, 217, 217, 0.40) 20%, rgba(217, 217, 217, 0) 55% ,rgba(217, 217, 217, 0) 76%, rgba(225, 231, 239,0.8) 76%);
+    padding: 4.68rem 0;
     left: 0;
     right: 0;
 }
@@ -80,14 +78,15 @@
     content: "";
     bottom: 0;
     width: 100%;
-    height: 71%;
-    background: linear-gradient(-185deg, rgba(0,50,0,0.0) 20%,rgba(0,0,10,0.0) 70%, white 70%);
+    height: 18%;
+    background: linear-gradient(to bottom right, rgba(0,50,0,0.0) 20%,rgba(0,0,10,0.0) 50%, white 50%);
     left: 0;
     right: 0;}
 
 .hero{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 40px;
 
 }
 .hero-text{
@@ -111,7 +110,6 @@
 .hero-icon-wrapper{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(var(--size-80));
 }
 .icon-circles{position: relative;}
 .ic-1{

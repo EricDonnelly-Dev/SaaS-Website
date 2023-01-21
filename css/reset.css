@@ -6,7 +6,7 @@
     --clr-secondary:#01C9A7;
     --clr-dots:#ECF2FF;
     --clr-contrast: #f8fafe;
-    --font-colour-primary: #677788;
+    --font-colour-primary: #7b8ca1;
 
     --contact-bg:#20335B;
     --demo-bg:#F8FAFE;
@@ -130,9 +130,10 @@ img{
     height: var(--size-60);
     width: var(--size-60);
     margin:var(--size-50);
-    box-shadow: 0 10px 20px rgba(255,255,255,0.35);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35);
     border-radius: 50%;
     background-color: white;
+    z-index: 6;
 }
 .icon-circles.ic-l{
     height: var(--size-80);
