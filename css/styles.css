@@ -87,6 +87,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 40px;
+    margin: 0 auto;
 
 }
 .hero-text{
@@ -139,6 +140,10 @@
     box-shadow: 0 0 10px rgba(48,63,100,0.15);
     background-color: white;
     border-radius: .5rem;
+    transition: all .5s ease-in-out;
+}
+.benefit-card:hover{
+    transform: scale(1.125);
 }
 .benefit-card  img {
     width: var(--size-50);
@@ -155,21 +160,23 @@
 
 /* Different Perspective Styles */
 
-.diff-perspective{
+.diff-perspective {
     padding: var(--size-150);
+    background-color:  #F8FAFE;
+}
+.diff-perspective .container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
     justify-items:center;
     align-items: center;
     color: black;
-    background-color:  #F8FAFE;
 }
 .diff-perspective h1{font-size: var(--size-40);}
 
 
 /* Why Front Section*/
 
-.why-front{padding: var(--size-150) 0;}
+.why-front{padding: var(--size-100) 0;}
 .why-front-header{margin-bottom: var(--size-100);}
 .dots-wrapper{
     display: flex;
@@ -242,18 +249,18 @@
     gap: 90px;
 }
 .testimonial-img{
-    margin: 20px auto;
+    margin: var(--size-60) auto;
     width: 50%;
 }
 .background-image{
     position: relative;
     background-image: url("/saas-project-assets/abstract/dots.svg");
     background-repeat: no-repeat;
-    bottom: 27.5rem;
-    right: 4rem;
+    bottom: 75%;
+    right: 15%;
     width: 100%;
     z-index: -1;
-    height: 100%;
+    height: 88%;
 }
 .testimonial-text{
     display: flex;
@@ -262,7 +269,6 @@
     text-align: left;
     align-content: start;
     justify-content: start;
-    padding-top: var(--size-40);
     padding-left: var(--size-20);
 }
 .testimonial-text img{
@@ -288,7 +294,7 @@
     margin-left: 0.125rem;
 }
 .trusted-by-wrapper{
-    margin-top: var(--size-150);
+    margin-top: var(--size-80);
     justify-self: center;
     width: 100%;
     grid-column: 1 /3;
@@ -306,7 +312,7 @@
 }
 /* Pricing Section Styles*/
 
-.pricing-section{padding: var(--size-100);}
+.pricing-section{padding: var(--size-40);}
 .pricing-wrapper{
     display: grid;
     width: 65%;

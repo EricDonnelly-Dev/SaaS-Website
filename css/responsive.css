@@ -169,37 +169,41 @@
     .footer-copyright{width: 100%}
 
 }
-@media screen and (max-width: 360px) {
-
+@media screen and (max-width: 375px) {
+    .hero-icon-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
     .ic-1{
-        left: -2rem;
-        top: -4rem;
+        top: initial;
     }
     .ic-2{
-        top: -4rem;
-        bottom: 0;
-        right: 5.5rem;
+        top: initial;
+        bottom: initial;
+        right:  initial;
     }
     .ic-3{
-        top: -16rem;
-        left: 13rem;
+        top:  initial;
+        left: initial;
     }
     .ic-4{
-        top: -5rem;
-        left: -11.5rem;
+        top: initial;
+        left: initial;
 
     }
     .ic-5{
-        left: 10rem;
-        top: -15rem;
+        left: initial;
+        top:  initial;
     }
     .ic-6{
-        top: -6rem;
-        right: 6rem;
+        top: initial;
+        right:initial;
     }
-    ic-7{
-    left: 15rem;
-    top: -15rem;
+    .ic-7{
+    left: initial;
+    top:  initial;
     }
 
     .hero-icon-wrapper{
@@ -226,6 +230,12 @@
     .banner-wrapper {
         margin: 0;
     }
+
+    .testimonial-section{
+        width: 100%;
+        gap:0;
+        grid-template-columns: auto;
+    }
     .testimonial-img {
         margin: 20px auto;
         width: 65%;
@@ -236,12 +246,48 @@
         width: 123%;
         height: 101%;
     }
-    .testimonial-section{
-        width: 100%;
-        gap:0;
+    .testimonial-text{
+        text-align: center;
     }
+    .trusted-by-wrapper{
+        flex-direction: column;
+    }
+    .logo-wrapper{
+        margin-top: var(--size-100);
+        flex-direction: column;
+    }
+    .trusted-by-logo{
+        margin: 0 auto;
+        width: 40%;
+    }
+    .pricing-section{
+        margin:0 auto var(--size-50);
+    }
+    .pricing-wrapper{
+        grid-template-columns: 1fr;
+
+    }
+    .pricing-card{
+        grid-column: initial;
+        grid-gap: var(--size-40);
+    }
+    .pricing-card.card{
+        padding: 10px;
+    }
+
     .contact-area {
         grid-template-columns: 1fr;
+    }
+    .contact-area-text{
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+                            "header"
+                            "line  "
+                            "quote "
+                            "author"
+                            "people";
+        text-align: center;
     }
     .contact-area-form form {
         padding: var(--size-20);
@@ -250,7 +296,13 @@
         display: flex;
         grid-template-columns: 1fr;
         flex-direction: column;
+        text-align: center;
     }
+    .contact-area-form input.btn{
+        align-self: center;
+        width: 40%;
+    }
+
     footer{
         text-align: center;
     }
