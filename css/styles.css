@@ -309,6 +309,11 @@
     margin-top: var(--size-80);
     height: 30%;
     display: flex;
+    gap:var(--size-30)
+}
+.trusted-by-logo,
+.logo-wrapper img{
+    width: 100%;
 }
 /* Pricing Section Styles*/
 
